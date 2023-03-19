@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects</title>
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+  </head>
+  <body>
+    <h1>Student-Initiated Projects</h1>
+    {% extends 'base.html' %}
+    {% block content %}
+    <h2>Ongoing Projects</h2>
+    <ul>
+      <li>
+        <strong>Project Alpha:</strong> Providing free tuition for needy students
+        <p>Project Alpha aims to provide free tuition for needy students in the school. Volunteer tutors are recruited to provide the tuition sessions, which are held after school hours. The project has been ongoing since January 2022.</p>
+      </li>
+      <li>
+        <strong>Project Food:</strong> Food donation drive for low-income families
+        <p>Project Food aims to collect food donations from the school community to distribute to low-income families in the neighborhood. Donations can be dropped off at the school's main entrance. The project has been ongoing since April 2022.</p>
+      </li>
+    </ul>
+    
+    <h2>Past Projects</h2>
+    <ul>
+      <li>
+        <strong>Project Empathy:</strong> Fundraising for local charity
+        <p>Project Empathy aimed to raise funds for a local charity that supports underprivileged children. The project involved a charity run and donation drive, which raised a total of $10,000 for the charity. The project was completed in December 2021.</p>
+      </li>
+      <li>
+        <strong>Project Books:</strong> Book donation drive for orphanage
+        <p>Project Books aimed to collect book donations from the school community to donate to an orphanage in the area. The project was successful in collecting over 500 books, which were donated to the orphanage. The project was completed in June 2021.</p>
+      </li>
+    </ul>
+    {% endblock %}
+  </body>
+</html>

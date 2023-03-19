@@ -1,0 +1,8 @@
+Flask==2.0.2
+openpyxl==3.0.7
+flask-mysqldb==0.2.0
+Flask-Mail==0.9.1
+pip install gdown
+pip install qrcode[pil]
+pip freeze > requirements.txt
+pip install -r requirements.txt

@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  margin-left: 20px;
+}
+

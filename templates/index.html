@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Studentville</title>
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Welcome to Studentville</h1>
+    <p>For your #whyASR experience</p>
+    <a href="https://open.spotify.com/album/3lS1y25WAhcqJDATJK70Mq?si=p9QtLURjSYmG3nqG_ENZDw" class="hidden-link">Hidden Link</a>
+    <ul>
+      <li><a href="{{ url_for('perks') }}">ASRJCian Perks</a></li>
+      <li><a href="{{ url_for('proj') }}">Student-Initiated Projects</a></li>
+      <li><a href="{{ url_for('suggestions') }}">Event Suggestions</a></li>
+      <li><a href="{{ url_for('logout') }}">Log out</a></li>
+    </ul>
+  </body>
+</html>

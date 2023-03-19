@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Suggestions</title>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+    </head>
+    <body>
+        <h1>Sound out your Event Suggestions!</h1>
+        {% extends 'base.html' %}
+        {% block content %}
+        <form method="post" action="{{ url_for('suggestions') }}">
+        <label for="suggestion">Suggestion:</label>
+        <textarea id="box" name="box"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        </form>
+        {% endblock %}
+    </body>
+</html>

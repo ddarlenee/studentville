@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Benefits</title>
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+  </head>
+  <body>
+    <h1>Perks as an ASRJCian</h1>
+    {% extends 'base.html' %}
+    
+    {% block content %}
+    <p>Here are the shops where you can get discounts at:</p>
+    <ul class="perks-list">
+        <li><img src="{{ url_for('static', filename='playmade.png') }}" alt="Playmade"><a href="https://www.playmade.com.sg/">(20% Discount)</a></li>
+        <li><img src="{{ url_for('static', filename='popular.png') }}" alt="Popular"><a href="https://www.popular.com.sg/">(20% Discount)</a></li>
+        <li><img src="{{ url_for('static', filename='birdsofparadise.png') }}" alt="Birds of Paradise"><a href="https://birdsofparadise.sg/">(30% Discount)</a></li>
+    </ul>
+    <div class="qrcode-container">
+      <img src="{{ url_for('static', filename='frame.png') }}" alt="QR Code for ASRJCian Verification">
+    </div>
+  {% endblock %}
+  </body>
+</html>
+
